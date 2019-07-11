@@ -70,6 +70,11 @@ nav {
 	height: auto;
 	border: solid 2px black;
 }
+.contenedor2 h3 {
+	margin-top: -20px;
+	text-decoration: underline;
+	display: none;
+}
 #izquierda:hover {
 	transform: rotate(10deg);
 	border: solid 2px #82c3a6;
@@ -138,6 +143,9 @@ footer div {
 		margin: 5% 10% 5% 10%;
 		width: 80%;
 		height: auto;
+	}
+	.contenedor2 h3 {
+		display: block;
 	}
 	footer {
 		display: flex;
