@@ -1,0 +1,146 @@
+body {
+	margin: 5px;
+	padding: 5px;
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+}
+.contenido {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header {
+	color: white;
+	background-color: #5b7989;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px 10px 0px 0px;
+}
+header a:link {
+	color: white;
+}
+header a:visited {
+	color: white;	
+}
+#titulo {
+	text-shadow: 2px 2px #02010a;
+	padding: 0px 0px 0px 20px;
+	order: 1;
+	flex-basis: 80%;
+	text-align: left;
+}
+nav {
+	padding: 10px 20px 0px 0px;
+	order: 2;
+	flex-basis: 20%;
+	text-align: right;
+}
+.actual {
+	text-decoration: none;
+}
+.contenedor1 {
+	background-color: #82c3a6;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#central {
+	margin: 20px;
+	height: 70%;
+	width: 70%;
+	border: solid 2px black;	
+}
+.contenedor2 {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#izquierda, #derecha {
+	margin: 20px;
+	height: 40%;
+	width: 40%;
+	border: solid 2px black;
+	transition-property: transform, border;
+	transition-duration: 1s, 1s;
+}
+.contenedor2 img {
+	margin: 3%;
+	width: 26%;
+	height: auto;
+	border: solid 2px black;
+}
+#izquierda:hover {
+	transform: rotate(10deg);
+	border: solid 2px #82c3a6;
+}
+#derecha:hover {
+	transform: translate(20px, -10px);
+	border: solid 2px #82c3a6;
+}
+#central, #izquierda, #derecha {
+	box-shadow: 2px 2px #02010a;
+}
+#sup_izquierda {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+#sup_central, #inf_izquierda, #inf_derecha {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#sup_derecha {
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+footer {
+	padding: 5px 20px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+}
+footer div {
+	flex-basis: 0;
+	flex-grow: 1;
+	padding-left: 5%;
+}
+#redes_sociales img {
+	width: 2em;
+	height: 2em;
+	border-radius: 1em;
+}
+#redes_sociales a {
+	vertical-align: middle;
+	padding: 10px;
+}
+#redes_sociales {
+	display: flex;
+	flex-direction: column;
+}
+#facebook, #twitter, #youtube, #google {
+	display: flex;
+	flex-direction: row;
+}
+@media screen and (max-width: 900px){
+	.contenido {
+		width: 100%;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	#titulo, nav {
+		text-align: center;
+		padding: 0px;
+	}
+	#central, #izquierda, #derecha, .contenedor2 img {
+		margin: 5% 10% 5% 10%;
+		width: 80%;
+		height: auto;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
